@@ -7,7 +7,6 @@ fullStackPHPClassName("03.04 - Manipulação de objetos");
  */
 fullStackPHPClassSession("manipulação", __LINE__);
 
-
 /**
  * [ análise ] class | objetcs | instances
  */
