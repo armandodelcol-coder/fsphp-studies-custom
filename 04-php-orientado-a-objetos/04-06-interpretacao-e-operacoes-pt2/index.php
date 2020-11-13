@@ -1,4 +1,7 @@
 <?php
+
+use Source\Interpretation\Product;
+
 require __DIR__ . '/../../fullstackphp/fsphp.php';
 fullStackPHPClassName("04.06 - Interpretação e operações pt2");
 
@@ -12,6 +15,18 @@ require __DIR__ . "/source/autoload.php";
  */
 fullStackPHPClassSession("__set", __LINE__);
 
+$fsphp = new Product();
+$fsphp->handler('Full Stack PHP Developer', 1997);
+
+$fsphp->name = 'FSPHP';
+$fsphp->title = 'FSPHP';
+$fsphp->value = 1997;
+// $fsphp->price = 1997;
+
+var_dump($fsphp);
+
+$fsphp->title = 'Full Stack PHP Developer';
+$fsphp->company = 'Upinside';
 
 /*
  * [ get ] Executado automaticamente quando se tenta obter uma propriedade inacessível
@@ -20,6 +35,7 @@ fullStackPHPClassSession("__set", __LINE__);
  */
 fullStackPHPClassSession("__get", __LINE__);
 
+echo "<p>o curso {$fsphp->title} da {$fsphp->company} é o melhor do mercado</p>";
 
 /*
  * [ isset ] Executada automaticamente quando um teste ISSET ou EMPTY é executado em uma propriedade inacessível
@@ -27,6 +43,11 @@ fullStackPHPClassSession("__get", __LINE__);
  */
 fullStackPHPClassSession("__isset", __LINE__);
 
+isset($fsphp->phone);
+isset($fsphp->name);
+empty($fsphp->address);
+
+var_dump($fsphp);
 
 /*
  * [ call ] Executada automaticamente quando se tenta usar um método inacessível
@@ -35,6 +56,8 @@ fullStackPHPClassSession("__isset", __LINE__);
  */
 fullStackPHPClassSession("__call", __LINE__);
 
+$fsphp->notFound('Ooops', 'teste');
+$fsphp->setPrice(1997, 10);
 
 /*
  * [ unset ] Executada automaticamente quando se tenta usar unset em uma propriedade inacessível
@@ -42,9 +65,16 @@ fullStackPHPClassSession("__call", __LINE__);
  */
 fullStackPHPClassSession("__toString", __LINE__);
 
+echo $fsphp;
 
 /*
  * [ unset ] Executada automaticamente quando se tenta usar unset em uma propriedade inacessível
  * http://php.net/manual/pt_BR/language.oop5.overloading.php#object.unset
  */
 fullStackPHPClassSession("__unset", __LINE__);
+
+unset($fsphp->name,
+$fsphp->price,
+$fsphp->data);
+
+var_dump($fsphp);
