@@ -10,7 +10,7 @@ class UserModel extends Model
     /** @var string $entity database table */
     protected static $entity = 'users';
 
-    public function bootstrao()
+    public function bootstrap()
     {
         # code...
     }
