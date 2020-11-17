@@ -15,7 +15,7 @@ class Connect
     private const OPTIONS = [
         PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8', // Forçar os nomes com padrão utf8
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Qualquer erro utilizando PDO vai estourar uma PDOException
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, // o default do .fetch vai ser fetchAssc
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, // o default do .fetch vai ser um objeto stdClass
         PDO::ATTR_CASE => PDO::CASE_NATURAL // Garante o mesmo nome de colunas no banco de dados
     ];
 
