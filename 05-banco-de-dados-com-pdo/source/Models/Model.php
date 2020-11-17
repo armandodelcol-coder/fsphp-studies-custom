@@ -97,9 +97,24 @@ abstract class Model
         }
     }
 
-    protected function update()
+    protected function update(string $entity, array $data, string $terms, string $params): ?int
     {
-        # code...
+        try {
+            $dataSet = [];
+            foreach ($data as $bind => $value) {
+                $dataSet[] = "{$bind} = :{$bind}";
+            }
+            $dataSet = implode(', ', $dataSet);
+            parse_str($params, $params);
+
+            $stmt = Connect::getInstance()->prepare("UPDATE {$entity} SET {$dataSet} WHERE {$terms}");
+            $stmt->execute($this->filter(array_merge($data, $params)));
+
+            return ($stmt->rowCount() ?? 1);
+        } catch (PDOException $exception) {
+            $this->fail = $exception;
+            return null;
+        }
     }
 
     protected function delete()
