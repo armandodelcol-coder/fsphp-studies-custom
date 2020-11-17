@@ -3,8 +3,28 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e96b43e-d1eb-43d7-9178-7d5fa074bc30" name="Default Changelist" comment="" />
+    <list default="true" id="2e96b43e-d1eb-43d7-9178-7d5fa074bc30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,11 +47,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/05-banco-de-dados-com-pdo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\studies\fsphp-studies-custom\05-banco-de-dados-com-pdo" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,21 +69,37 @@
       <option name="presentableId" value="Default" />
       <updated>1605313616164</updated>
       <workItem from="1605313617749" duration="3609000" />
+      <workItem from="1605621448596" duration="1352000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="1001" y="178" key="#CLI_Interpreters" timestamp="1605315080361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1001" y="178" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1605315080361" />
-    <state x="1059" y="246" key="NewPhpClassDialog" timestamp="1605318239669">
+    <state x="1086" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605621519461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1059" y="246" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605318239669" />
+    <state x="1086" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605621519461" />
+    <state x="1059" y="246" key="NewPhpClassDialog" timestamp="1605621784651">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1059" y="246" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605621784651" />
     <state x="922" y="168" key="SettingsEditor" timestamp="1605315086514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
