@@ -17,6 +17,10 @@ abstract class Model
     /** @var string|null */
     protected $message;
 
+    /**
+     * @param $name
+     * @param $value
+     */
     public function __set($name, $value)
     {
         if (empty($this->data)) {
@@ -26,11 +30,19 @@ abstract class Model
         $this->data->$name = $value;
     }
 
+    /**
+     * @param $name
+     * @return boolean
+     */
     public function __isset($name)
     {
         return isset($this->data->$name);
     }
 
+    /**
+     * @param $name
+     * @return void
+     */
     public function __get($name)
     {
         return ($this->data->$name ?? null);
@@ -60,6 +72,11 @@ abstract class Model
         return $this->message;
     }
 
+    /**
+     * @param string $entity
+     * @param array $data
+     * @return integer|null
+     */
     protected function create(string $entity, array $data): ?int
     {
         try {
@@ -76,6 +93,11 @@ abstract class Model
         }
     }
 
+    /**
+     * @param string $select
+     * @param string $params
+     * @return \PDOStatement|null
+     */
     protected function read(string $select, string $params = null): ?\PDOStatement
     {
         try {
@@ -97,6 +119,13 @@ abstract class Model
         }
     }
 
+    /**
+     * @param string $entity
+     * @param array $data
+     * @param string $terms
+     * @param string $params
+     * @return integer|null
+     */
     protected function update(string $entity, array $data, string $terms, string $params): ?int
     {
         try {
@@ -117,11 +146,28 @@ abstract class Model
         }
     }
 
-    protected function delete()
+    /**
+     * @param string $entity
+     * @param string $terms
+     * @param string $params
+     * @return integer|null
+     */
+    protected function delete(string $entity, string $terms, string $params): ?int
     {
-        # code...
+        try {
+            $stmt = Connect::getInstance()->prepare("DELETE FROM {$entity} WHERE {$terms}");
+            parse_str($params, $params);
+            $stmt->execute($params);
+            return ($stmt->rowCount() ?? 1);
+        } catch (PDOException $exception) {
+            $this->fail = $exception;
+            return null;
+        }
     }
 
+    /**
+     * @return array|null
+     */
     protected function safe(): ?array
     {
         $safe = (array)$this->data;
@@ -131,6 +177,10 @@ abstract class Model
         return $safe;
     }
 
+    /**
+     * @param array $data
+     * @return array
+     */
     private function filter(array $data): array
     {
         $filter = [];

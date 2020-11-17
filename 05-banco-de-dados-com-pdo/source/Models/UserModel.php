@@ -10,6 +10,13 @@ class UserModel extends Model
     /** @var string $entity database table */
     protected static $entity = 'users';
 
+    /**
+     * @param string $firsttName
+     * @param string $lastName
+     * @param string $email
+     * @param string $document
+     * @return UserModel|null
+     */
     public function bootstrap(string $firsttName, string $lastName, string $email, string $document = null): ?UserModel
     {
         $this->first_name = $firsttName;
@@ -19,6 +26,11 @@ class UserModel extends Model
         return $this;
     }
 
+    /**
+     * @param integer $id
+     * @param string $columns
+     * @return UserModel|null
+     */
     public function load(int $id, string $columns = '*'): ?UserModel
     {
         $load = $this->read(
@@ -33,6 +45,11 @@ class UserModel extends Model
         return  $load->fetchObject(__CLASS__);
     }
 
+    /**
+     * @param string $email
+     * @param string $columns
+     * @return void
+     */
     public function find(string $email, string $columns = '*')
     {
         $find = $this->read(
@@ -47,6 +64,12 @@ class UserModel extends Model
         return  $find->fetchObject(__CLASS__);
     }
 
+    /**
+     * @param integer $limit
+     * @param integer $offset
+     * @param string $columns
+     * @return array|null
+     */
     public function all(int $limit = 30, int $offset = 0, string $columns = '*'): ?array
     {
         $all = $this->read(
@@ -61,6 +84,9 @@ class UserModel extends Model
         return  $all->fetchAll(\PDO::FETCH_CLASS, __CLASS__);
     }
 
+    /**
+     * @return UserModel|null
+     */
     public function save(): ?UserModel
     {
         if (!$this->required()) {
@@ -104,11 +130,28 @@ class UserModel extends Model
         return $this;
     }
 
-    public function destroy()
+    /**
+     * @return UserModel|null
+     */
+    public function destroy(): ?UserModel
     {
-        # code...
+        if (!empty($this->id)) {
+            $this->delete(self::$entity, 'id = :id', "id={$this->id}");
+        }
+
+        if ($this->fail()) {
+            $this->message = 'Não foi possível remover o usuário';
+            return null;
+        }
+
+        $this->message = 'Usuário removido com sucesso';
+        $this->data = null;
+        return $this;
     }
 
+    /**
+     * @return boolean
+     */
     private function required(): bool
     {
         if (empty($this->first_name) || empty($this->last_name) || empty($this->email)) {
