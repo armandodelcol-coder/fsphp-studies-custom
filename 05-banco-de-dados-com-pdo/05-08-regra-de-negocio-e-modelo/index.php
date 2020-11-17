@@ -1,4 +1,8 @@
 <?php
+
+use Source\Models\Model;
+use Source\Models\UserModel;
+
 require __DIR__ . '/../../fullstackphp/fsphp.php';
 fullStackPHPClassName("05.08 - Regra de negócio e modelo");
 
@@ -10,9 +14,21 @@ require __DIR__ . "/../source/autoload.php";
  */
 fullStackPHPClassSession("layer", __LINE__);
 
+$layer = new ReflectionClass(Model::class);
+
+var_dump(
+    $layer->getDefaultProperties(),
+    $layer->getMethods()
+);
 
 /*
  * [ model ] Cada rotina em um sistema tem uma regra de negócio. Um model serve para abstrair
  * essas rotinas se reponsabilizando pelas regras.
  */
 fullStackPHPClassSession("model", __LINE__);
+
+$model = new UserModel();
+var_dump(
+    $model,
+    get_class_methods($model)
+);
