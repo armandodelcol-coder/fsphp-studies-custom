@@ -2,6 +2,7 @@
 
 namespace Source\Models;
 
+use PDOStatement;
 use Source\Core\Model;
 
 class User extends Model
@@ -50,9 +51,9 @@ class User extends Model
     /**
      * @param string $email
      * @param string $columns
-     * @return void
+     * @return User|null
      */
-    public function find(string $email, string $columns = '*')
+    public function find(string $email, string $columns = '*'): ?User
     {
         $find = $this->read(
             "SELECT {$columns} FROM " . self::$entity . " WHERE email = :email",
