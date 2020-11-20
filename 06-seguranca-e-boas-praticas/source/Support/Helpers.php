@@ -31,9 +31,9 @@ function is_passwd(string $password): bool
 
 
 /**
- * ##################
- * ###   STRING   ###
- * ##################
+ * ####################
+ * ###   PASSWORD   ###
+ * ####################
  */
 
 
@@ -65,6 +65,27 @@ function passwd_rehash(string $hash): bool
     return password_needs_rehash($hash, CONF_PASSWD_ALGO, CONF_PASSWD_OPTIONS);
 }
 
+/**
+ * @return string
+ */
+function csrf_input(): string
+{
+    session()->csrf();
+    return "<input type='hidden' name='csrf' value='" . (session()->csrf_token ?? '') . "' />";
+}
+
+/**
+ * @param $request
+ * @return boolean
+ */
+function csrf_verify($request): bool
+{
+    if (empty(session()->csrf_token) || empty($request['csrf']) || $request['csrf'] != session()->csrf_token) {
+        return false;
+    }
+
+    return true;
+}
 
 /**
  * ##################
@@ -175,9 +196,9 @@ function str_limit_chars(string $string, int $limit, string $pointer = '...'): s
 
 
 /**
- * ##################
+ * ###############
  * ###   URL   ###
- * ##################
+ * ###############
  */
 
 
