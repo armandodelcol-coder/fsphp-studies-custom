@@ -1,4 +1,8 @@
 <?php
+
+use Source\Core\Connect;
+use Source\Models\User;
+
 require __DIR__ . '/../../fullstackphp/fsphp.php';
 fullStackPHPClassName("06.03 - Configurações do projeto");
 
@@ -9,8 +13,16 @@ require __DIR__ . "/../source/autoload.php";
  */
 fullStackPHPClassSession("configurações", __LINE__);
 
+var_dump(get_defined_constants(true)['user']);
 
 /*
  * [ refatoramento ] Iniciando o desenvolvimento de uma arquitetura de projeto.
  */
 fullStackPHPClassSession("refatoramento", __LINE__);
+
+$read = Connect::getInstance()->prepare('SELECT * FROM users LIMIT 1, 1');
+$read->execute();
+var_dump($read->fetchAll());
+
+$user = (new User())->load(1);
+var_dump($user);
