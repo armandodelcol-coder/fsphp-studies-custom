@@ -27,6 +27,12 @@ define('CONF_DATE_APP', 'Y-m-d H:i:s');
 define('CONF_SES_PATH', __DIR__ . '/../../storage/sessions/');
 
 /**
+ * PASSWORD
+ */
+define('CONF_PASSWD_MIN_LEN', 8);
+define('CONF_PASSWD_MAX_LEN', 40);
+
+/**
  * MESSAGE
  */
 define('CONF_MESSAGE_CLASS', 'trigger');
