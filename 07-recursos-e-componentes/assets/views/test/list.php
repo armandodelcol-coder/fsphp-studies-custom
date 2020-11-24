@@ -13,3 +13,5 @@ $v->layout('test::base'); ?>
         <a href="?id=<?= $user->id; ?>" title='editar'>Editar</a>
     </article>
 <?php endforeach; ?>
+
+<?= ($pager ?? null) ?>
