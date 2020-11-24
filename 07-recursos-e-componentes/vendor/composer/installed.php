@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '814525dc3e5c86a0d62bae8e461157441b0f79b1',
+    'reference' => '4ba6dd136f631032c5eeb9a3ed0888942784054f',
     'name' => 'armandodelcol-coder/fsphp',
   ),
   'versions' => 
@@ -18,7 +18,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => '814525dc3e5c86a0d62bae8e461157441b0f79b1',
+      'reference' => '4ba6dd136f631032c5eeb9a3ed0888942784054f',
+    ),
+    'phpmailer/phpmailer' => 
+    array (
+      'pretty_version' => 'v6.1.8',
+      'version' => '6.1.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '917ab212fa00dc6eacbb26e8bc387ebe40993bc1',
     ),
   ),
 );
