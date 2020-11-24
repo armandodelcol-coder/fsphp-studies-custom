@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '3e429b54a15c274236972c3fdbb12c5f35f78e63',
+    'reference' => '04c89c093d23e1e0af2f6dc33c7e32a362ae7b59',
     'name' => 'armandodelcol-coder/fsphp',
   ),
   'versions' => 
@@ -18,7 +18,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => '3e429b54a15c274236972c3fdbb12c5f35f78e63',
+      'reference' => '04c89c093d23e1e0af2f6dc33c7e32a362ae7b59',
+    ),
+    'coffeecode/cropper' => 
+    array (
+      'pretty_version' => '1.3.1',
+      'version' => '1.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ecc9a275d1cbb4117ab52233f298f4c4b85de71a',
     ),
     'coffeecode/uploader' => 
     array (
@@ -46,6 +55,24 @@
       array (
       ),
       'reference' => '917ab212fa00dc6eacbb26e8bc387ebe40993bc1',
+    ),
+    'rosell-dk/image-mime-type-guesser' => 
+    array (
+      'pretty_version' => '0.3',
+      'version' => '0.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '204fd61ca81e3b0ba46c6165dab8f74816b1fe99',
+    ),
+    'rosell-dk/webp-convert' => 
+    array (
+      'pretty_version' => '2.3.2',
+      'version' => '2.3.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5da7989e87cc0b6c61a5fd73262ed28999be27ab',
     ),
   ),
 );
