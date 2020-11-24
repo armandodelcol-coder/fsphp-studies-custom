@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '4ba6dd136f631032c5eeb9a3ed0888942784054f',
+    'reference' => 'd8685729f75407d6e6cf1646365a59d20977086b',
     'name' => 'armandodelcol-coder/fsphp',
   ),
   'versions' => 
@@ -18,7 +18,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => '4ba6dd136f631032c5eeb9a3ed0888942784054f',
+      'reference' => 'd8685729f75407d6e6cf1646365a59d20977086b',
+    ),
+    'league/plates' => 
+    array (
+      'pretty_version' => 'v4.0.0-alpha',
+      'version' => '4.0.0.0-alpha',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f53f4c1fa4bf307d0f3858a348172ff4faf7669a',
     ),
     'phpmailer/phpmailer' => 
     array (

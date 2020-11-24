@@ -7,6 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit3aa8f848c5486cb333f1f4a69c63ebee
 {
     public static $files = array (
+        'e471bf351add62873bc0289ccd6a937f' => __DIR__ . '/..' . '/league/plates/src/Template/match.php',
+        '152c98af9456eeb8f53697d6a7dfd689' => __DIR__ . '/..' . '/league/plates/src/Extension/Data/data.php',
+        'e20239a76b73b9912f51f0005956d1db' => __DIR__ . '/..' . '/league/plates/src/Extension/Path/path.php',
+        'd513f8e004e152493580ca1917e308ba' => __DIR__ . '/..' . '/league/plates/src/Extension/RenderContext/func.php',
+        '27980683f1626a3fd1405d27b171c0fe' => __DIR__ . '/..' . '/league/plates/src/Extension/RenderContext/render-context.php',
+        'bdc465a053da7f7ddb072631f6d41d45' => __DIR__ . '/..' . '/league/plates/src/Extension/LayoutSections/layout-sections.php',
+        'afa76803f24616d7599be3b7b0846adc' => __DIR__ . '/..' . '/league/plates/src/Extension/Folders/folders.php',
+        '16c5be35e32c6cf916d875518b909210' => __DIR__ . '/..' . '/league/plates/src/Util/util.php',
         '7885a50be40aca86799fb43b6c36cba5' => __DIR__ . '/../..' . '/source/Support/Config.php',
         'ae3c99d6ba50847f8c0296b4a368000c' => __DIR__ . '/../..' . '/source/Support/Helpers.php',
     );
@@ -20,6 +28,10 @@ class ComposerStaticInit3aa8f848c5486cb333f1f4a69c63ebee
         array (
             'PHPMailer\\PHPMailer\\' => 20,
         ),
+        'L' => 
+        array (
+            'League\\Plates\\' => 14,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -30,6 +42,10 @@ class ComposerStaticInit3aa8f848c5486cb333f1f4a69c63ebee
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'League\\Plates\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/plates/src',
         ),
     );
 
