@@ -16,6 +16,7 @@ extension_loaded('filter') || $missingExtensions[] = 'filter';
 extension_loaded('gd') || $missingExtensions[] = 'gd';
 extension_loaded('hash') || $missingExtensions[] = 'hash';
 extension_loaded('mbstring') || $missingExtensions[] = 'mbstring';
+extension_loaded('simplexml') || $missingExtensions[] = 'simplexml';
 
 if ($missingExtensions) {
     $issues[] = 'Your Composer dependencies require the following PHP extensions to be installed: ' . implode(', ', $missingExtensions);

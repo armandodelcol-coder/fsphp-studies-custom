@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '04c89c093d23e1e0af2f6dc33c7e32a362ae7b59',
+    'reference' => '0ea7699dac1d6d33d2b3df4fd5bdfa170d178d05',
     'name' => 'armandodelcol-coder/fsphp',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '04c89c093d23e1e0af2f6dc33c7e32a362ae7b59',
+      'reference' => '0ea7699dac1d6d33d2b3df4fd5bdfa170d178d05',
     ),
     'coffeecode/cropper' => 
     array (
@@ -28,6 +28,15 @@
       array (
       ),
       'reference' => 'ecc9a275d1cbb4117ab52233f298f4c4b85de71a',
+    ),
+    'coffeecode/optimizer' => 
+    array (
+      'pretty_version' => '2.0.1',
+      'version' => '2.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6379bc47072e3e5d6354d51c5731ecab860804f3',
     ),
     'coffeecode/uploader' => 
     array (
