@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'd8685729f75407d6e6cf1646365a59d20977086b',
+    'reference' => '3e429b54a15c274236972c3fdbb12c5f35f78e63',
     'name' => 'armandodelcol-coder/fsphp',
   ),
   'versions' => 
@@ -31,7 +31,16 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'd8685729f75407d6e6cf1646365a59d20977086b',
+      'reference' => '3e429b54a15c274236972c3fdbb12c5f35f78e63',
+    ),
+    'coffeecode/uploader' => 
+    array (
+      'pretty_version' => '1.0.10',
+      'version' => '1.0.10.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1fd58f13d41de26be36bef9fcebe54b865f3380e',
     ),
     'league/plates' => 
     array (

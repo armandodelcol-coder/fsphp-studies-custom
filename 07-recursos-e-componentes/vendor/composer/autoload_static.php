@@ -32,6 +32,10 @@ class ComposerStaticInit3aa8f848c5486cb333f1f4a69c63ebee
         array (
             'League\\Plates\\' => 14,
         ),
+        'C' => 
+        array (
+            'CoffeeCode\\Uploader\\' => 20,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -46,6 +50,10 @@ class ComposerStaticInit3aa8f848c5486cb333f1f4a69c63ebee
         'League\\Plates\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/plates/src',
+        ),
+        'CoffeeCode\\Uploader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/uploader/src',
         ),
     );
 

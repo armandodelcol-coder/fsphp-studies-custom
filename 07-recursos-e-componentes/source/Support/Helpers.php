@@ -211,7 +211,7 @@ function redirect(string $url): void
 
 /**
  * ################
- * ###   CORE   ###
+ * ###   DATE   ###
  * ################
  */
 
