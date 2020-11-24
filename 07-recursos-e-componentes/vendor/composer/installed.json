@@ -117,6 +117,57 @@
             "install-path": "../coffeecode/optimizer"
         },
         {
+            "name": "coffeecode/paginator",
+            "version": "1.0.5",
+            "version_normalized": "1.0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robsonvleite/paginator.git",
+                "reference": "7ee353b183fa2915ba2e2d7296108c075b7d0917"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robsonvleite/paginator/zipball/7ee353b183fa2915ba2e2d7296108c075b7d0917",
+                "reference": "7ee353b183fa2915ba2e2d7296108c075b7d0917",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "time": "2020-06-29T14:43:29+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "CoffeeCode\\Paginator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robson V. Leite",
+                    "email": "cursos@upinside.com.br",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Paginator is simple and is ready to generate results navigation in your application",
+            "homepage": "http://www.upinside.com.br",
+            "keywords": [
+                "Coffeecode",
+                "pagination",
+                "paginator",
+                "upinside"
+            ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/paginator/issues",
+                "source": "https://github.com/robsonvleite/paginator/tree/master"
+            },
+            "install-path": "../coffeecode/paginator"
+        },
+        {
             "name": "coffeecode/uploader",
             "version": "1.0.10",
             "version_normalized": "1.0.10.0",

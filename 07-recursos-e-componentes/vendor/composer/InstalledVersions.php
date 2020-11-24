@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '0ea7699dac1d6d33d2b3df4fd5bdfa170d178d05',
+    'reference' => 'fe5baf2f536d695bd84069543e6c7cea4d99c8aa',
     'name' => 'armandodelcol-coder/fsphp',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '0ea7699dac1d6d33d2b3df4fd5bdfa170d178d05',
+      'reference' => 'fe5baf2f536d695bd84069543e6c7cea4d99c8aa',
     ),
     'coffeecode/cropper' => 
     array (
@@ -50,6 +50,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '6379bc47072e3e5d6354d51c5731ecab860804f3',
+    ),
+    'coffeecode/paginator' => 
+    array (
+      'pretty_version' => '1.0.5',
+      'version' => '1.0.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7ee353b183fa2915ba2e2d7296108c075b7d0917',
     ),
     'coffeecode/uploader' => 
     array (
